@@ -1,0 +1,23 @@
+version: '3'
+services:
+  rails:
+    build:
+      # docker -f と同じ挙動にしている
+      context: .
+      dockerfile: ./docker/rails/Dockerfile
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./api:/api
+    depends_on:
+      - db
+    environment:
+      TZ: Asia/Tokyo
+    command:
+      bundle exec pumactl start
+
+  db:
+    image: postgres
+    restart: always
+    environment:
+      POSTGRES_PASSWORD: password
