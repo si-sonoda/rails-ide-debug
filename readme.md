@@ -11,4 +11,6 @@
     `cd ~/rails-ide-debug`
 3. コンテナのビルド
    `docker-compose build`
-
+4. コンテナの立ち上げ
+   `docker-compose up`
+5. http://localhost:3000 へアクセス、画面が表示されるとOK
