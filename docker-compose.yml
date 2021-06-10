@@ -6,7 +6,7 @@ services:
       context: .
       dockerfile: ./docker/rails/Dockerfile
     ports:
-      - "3000:3000"
+      - "3030:3000"
     volumes:
       - ./api:/api
     depends_on:
