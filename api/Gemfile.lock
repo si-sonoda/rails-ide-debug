@@ -77,6 +77,8 @@ GEM
       debase-ruby_core_source (>= 0.10.2)
     debase-ruby_core_source (0.10.12)
     erubi (1.10.0)
+    faker (2.18.0)
+      i18n (>= 1.6, < 2)
     ffi (1.15.1)
     globalid (0.4.2)
       activesupport (>= 4.2.0)
@@ -205,6 +207,7 @@ DEPENDENCIES
   bootsnap (>= 1.4.2)
   capybara (>= 2.15)
   debase
+  faker
   jbuilder (~> 2.7)
   listen (~> 3.2)
   puma (~> 4.1)

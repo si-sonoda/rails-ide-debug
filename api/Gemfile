@@ -31,6 +31,8 @@ gem 'bootsnap', '>= 1.4.2', require: false
 group :development, :test do
   gem 'ruby-debug-ide'
   gem 'debase'
+
+  gem 'faker'
 end
 
 group :development do
